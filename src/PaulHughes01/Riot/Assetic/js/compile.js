@@ -17,7 +17,7 @@ var file = args._[0],
     
 if ( !file ) {
     console.log(yargs.help());
-    process.exit();
+    process.exit(0);
 }
 
 var text = fs.readFileSync(file,'utf8');
