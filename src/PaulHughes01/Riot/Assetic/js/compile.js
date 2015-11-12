@@ -1,5 +1,3 @@
-var arguments = process.argv.slice(2);
-
 var riot = require('riot'),
     yargs = require("yargs"),
     fs = require('fs');
