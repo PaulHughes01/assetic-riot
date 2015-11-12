@@ -15,7 +15,7 @@ class RiotFilter extends BaseNodeFilter
 
     public function __construct($nodeBin = null)
     {
-        $this->nodeBin = $nodeBin;
+        $this->nodeBin = $nodeBin ? $nodeBin : '/usr/bin/node';
     }
     
     public function filterLoad(AssetInterface $asset) {}

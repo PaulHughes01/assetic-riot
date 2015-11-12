@@ -17,7 +17,7 @@
         "symfony/filesystem": "^2.7"
     },
     "autoload": {
-        "psr-0": {"PaulHughes01\\Riot\\Assetic": "src/"}
+        "psr-4": {"PaulHughes01\\Riot\\": "src/PaulHughes01/Riot"}
     },
     "scripts": {
         "post-install-cmd": [
