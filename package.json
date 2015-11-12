@@ -8,5 +8,9 @@
     "yargs": "^3.29.0"
   },
   "author": "Paul Hughes",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/PaulHughes01/assetic-riot.git"
+  }
 }
