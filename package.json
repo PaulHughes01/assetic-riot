@@ -1,0 +1,16 @@
+{
+  "name": "assetic-riot",
+  "version": "0.0.1",
+  "description": "Assetic filter for compiling Riot JS tag files.",
+  "dependencies": {
+    "fs": "0.0.2",
+    "riot": "2.2.4",
+    "yargs": "^3.29.0"
+  },
+  "author": "Paul Hughes",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/PaulHughes01/assetic-riot.git"
+  }
+}

@@ -1,0 +1,30 @@
+{
+    "name": "PaulHughes01/assetic-riot",
+    "description": "Assetic filter for compiling Riot JS tag files.",
+    "keywords": ["assetic", "riotjs", "riot"],
+    "homepage": "https://github.com/PaulHughes01/assetic-riot",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul Hughes",
+            "email": "paul@paulhugh.es"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "kriswallsmith/assetic": "~1.1",
+        "symfony/filesystem": "^2.7"
+    },
+    "autoload": {
+        "psr-0": {"PaulHughes01\\Riot\\Assetic": "src/"}
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "npm install"
+        ],
+        "post-update-cmd": [
+            "npm install"
+        ]
+    }
+}
