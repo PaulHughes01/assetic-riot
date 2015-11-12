@@ -18,5 +18,13 @@
     },
     "autoload": {
         "psr-0": {"PaulHughes01\\Riot\\Assetic": "src/"}
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "npm install"
+        ],
+        "post-update-cmd": [
+            "npm install"
+        ]
     }
 }
