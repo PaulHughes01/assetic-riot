@@ -87,4 +87,4 @@ php app/console cache:clear --env=prod
 ```
 to see the updates. In dev mode (using app_dev.php), tags will automatically recompile on page load. 
 
-Enjoy! Tips, questions, and pull requests are welcome. :-
+Enjoy! Tips, questions, and pull requests are welcome. :-)
