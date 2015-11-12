@@ -4,6 +4,7 @@ namespace PaulHughes01\Riot\Assetic;
 use Assetic\Asset\AssetInterface;
 use Assetic\Filter\BaseNodeFilter;
 use Assetic\Util\FilesystemUtils;
+use Assetic\Exception\FilterException;
 
 /**
  * Assetic filter to compile Riot tags.
