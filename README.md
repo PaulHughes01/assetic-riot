@@ -3,7 +3,7 @@ An Assetic filter for precompiling Riot JS tags.
 
 ## Installation
 
-1. Open your `composer.json` file and add the following to the repositories section:
+* Open your `composer.json` file and add the following to the repositories section:
 ```json
 "repositories": [
 		{
@@ -25,23 +25,19 @@ An Assetic filter for precompiling Riot JS tags.
 		}
 	]
 ```
-
-2. Then, add to the requirements section:
+* Then, add to the requirements section:
 ```json
 "require": {
         "PaulHughes01/assetic-riot": "dev-master"
 }
 ```
-
-3. Run `composer update` in your project.
-
-4. `cd` to your `vendor/PaulHughes01/assetic-riot/` directory and run `npm install`
+* Run `composer update` in your project.
+* `cd` to your `vendor/PaulHughes01/assetic-riot/` directory and run `npm install`
 ```bash
 cd vendor/PaulHughes01/assetic-riot/
 npm install
 ```
-
-5. You can now use the RiotFilter in your app.
+* You can now use the RiotFilter in your app.
 ```php
 <?php
 use PaulHughes01\Riot\Assetic\RiotFilter;
@@ -53,7 +49,7 @@ $filter = new RiotFilter( '/usr/bin/node' );
 
 Follow steps 1 through 4 in the Installation section. Then, follow the steps below:
 
-1. Add to your app's config/services.yml file:
+* Add to your app's config/services.yml file:
 ```yml
 services:
     assetic.filter.riot:
@@ -65,7 +61,7 @@ services:
             - [setNodePaths, ['%assetic.filter.riot.node_paths%']]
 ```
 
-2. Add to your assetic filters in your config/config.yml file:
+* Add to your assetic filters in your config/config.yml file:
 ```yml
 assetic:
     filters:
@@ -74,7 +70,7 @@ assetic:
             node: /usr/bin/node
 ```
 
-3. Use the filter in your twig templates! 
+* Use the filter in your twig templates! 
 ```twig
 {% javascripts 
     filter='riot'
