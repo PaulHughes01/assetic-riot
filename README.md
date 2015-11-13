@@ -25,18 +25,22 @@ An Assetic filter for precompiling Riot JS tags.
 		}
 	]
 ```
+
 2. Then, add to the requirements section:
 ```json
 "require": {
         "PaulHughes01/assetic-riot": "dev-master"
 }
 ```
+
 3. Run `composer update` in your project.
+
 4. `cd` to your `vendor/PaulHughes01/assetic-riot/` directory and run `npm install`
 ```bash
 cd vendor/PaulHughes01/assetic-riot/
 npm install
 ```
+
 5. You can now use the RiotFilter in your app.
 ```php
 <?php
@@ -60,6 +64,7 @@ services:
         calls:
             - [setNodePaths, ['%assetic.filter.riot.node_paths%']]
 ```
+
 2. Add to your assetic filters in your config/config.yml file:
 ```yml
 assetic:
